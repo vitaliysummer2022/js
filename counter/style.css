@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 993px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background: #000 url(stars.png);
+}
+button {
+    font: 700 17px 'Roboto', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: .3s;
+}
+.cart {
+    width: 80%;
+    margin: 70px auto 20px;
+    padding: 40px;
+    border-radius: 4px;
+    background-color: rgba(251, 138, 97, 0.9);;
+}
+h2 {
+    font-size: 46px;
+    text-align: center;
+}
+.cart-box {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.cart-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background: url(mars.jpg) 50%/cover no-repeat;
+}
+.cart-box span {
+    font-size: 28px;
+}
+.counter-wrap {
+    margin-left: auto;
+}
+.counter-wrap button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #8e3a16;
+    border-radius: 50%;
+    color: #8e3a16;
+    background-color: #fff;
+}
+.counter-wrap button:hover {
+    color: #fff;
+    background-color: #8e3a16;
+}
+.counter-wrap button:disabled {
+    opacity: 0.5;
+    color: #8e3a16;
+    background-color: #fff;
+    cursor: default;
+}
+.counter-wrap b {
+    margin: 0 7px;
+    font-size: 20px;
+}
+.cart>button {
+    display: block;
+    width: 150px;
+    margin:  45px 0 0 auto;
+    padding: 10px 5px;
+    border: 1px solid #8e3a16;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #8e3a16;
+}
+.cart>button:hover {
+    color: #8e3a16;
+    background-color: #fff;
+}
