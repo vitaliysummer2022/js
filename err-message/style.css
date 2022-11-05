@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+    color: #222;
+    font: 18px 'Roboto', Arial, sans-serif;
+    background-color: #f8f6f6;
+}
+h2 {
+    margin: 25px 0 20px;
+    text-align: center;
+}
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+label {
+    position: relative;
+    display: block;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+input {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #8d8dfd;
+    border-radius: 2px;
+    font: 400 16px 'Roboto', Arial, sans-serif;
+}
+.field-err {
+    border-color: #fc6262;
+}
+.err-message {
+    position: absolute;
+    bottom: 4px;
+    left: 3px;
+    color: #fc6262;
+    font-size: 13px;
+    font-weight: 400;
+}
+button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 0;
+    border-color: transparent;
+    border-radius: 2px;
+    color: #f8f6f6;
+    font: inherit;
+    font-weight: 700;
+    background-color: #3d3ddb;
+    cursor: pointer;
+    transition: .4s;
+}
+button:hover {
+    background-color: #3030aa;
+}
