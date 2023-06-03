@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 200px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5cbf5;
+}
+form {
+    margin-top: 25px;
+}
+label {
+    position: relative;
+}
+input {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px 30px 5px 5px;
+    border: 1px solid purple;
+    border-radius: 4px;
+    outline: none;
+    color: purple;
+    font: inherit;
+    font-size: 18px;
+}
+.material-symbols-outlined {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    width: 30px;
+    height: 31px;
+    border: none;
+    color: purple;
+    font-size: 18px;
+    background-color: transparent;
+    cursor: pointer;
+}
