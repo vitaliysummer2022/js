@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    color: #3e3e3e;
+    font: 20px Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    transition: .4s;
+}
+.dark-mode {
+    color: #fafafa;
+    background-color: #1d1d1d;
+}
+h2 {
+    font-size: 28px;
+    text-align: center;
+}
+button {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    margin: 10px auto 20px;
+    border: 1px solid #4e4efc;
+    border-radius: 10px;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+.dark-mode button {
+    border-color: #8080fd;
+    background-color: transparent;
+}
+button::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 2%;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #4e4efc;
+    transform: translateY(-50%);
+    animation-name: moveToggleLeft;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.dark-mode button::before {
+    background-color: #8080fd;
+    animation-name: moveToggleRight;
+}
+@keyframes moveToggleRight {
+    0% {
+        left: 2%;
+    }
+    100% {
+        left: 49%;
+    }
+}
+@keyframes moveToggleLeft {
+    0% {
+        left: 49%;
+    }
+    100% {
+        left: 2%;
+    }
+}
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 400px;
+    margin: 0 auto;
+}
+.cars > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #4e4efc;
+    border-radius: 4px;
+    color: #4e4efc;
+    text-transform: capitalize;
+    background-color: #fff;
+    box-shadow: 0 3px 3px 0 #999;
+}
+.dark-mode .cars > div {
+    border-color: #8080fd;
+    color: #fafafa;
+    background-color: transparent;
+    box-shadow: 0 0 4px 0 #fafafa;
+}
+img {
+    width: 75px;
+}
