@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    color: #3e3e3e;
+    font: 20px Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+}
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.wrap {
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    text-transform: capitalize;
+    text-align: center;
+}
+img {
+    height: 200px;
+    padding: 20px;
+    border: 1px solid #6868f8;
+    border-radius: 4px;
+    background: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+}
+b {
+    display: block;
+    margin: 5px 0;
+    color: #6868f8;
+    font-size: 32px;
+}
+.speech-btn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background: url(img/sound.svg) 50%/75% no-repeat;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    left: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #6868f8 url(img/arrow.svg) 50%/50% no-repeat;
+    transform: translateY(-50%);
+}
+.swiper-button-next {
+    left: auto;
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+
+/* #6868f8 */
+/* linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%) */
