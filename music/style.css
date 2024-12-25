@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    color: #555;
+    font: 17px Arial, Helvetica, sans-serif;
+    background: url(img/cover.png) 50%/cover no-repeat;
+}
+.container {
+    width: 420px;
+    margin: 25px auto;
+}
+button {
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+    outline: none;
+    cursor: pointer;
+}
+button:hover {
+    transform: scale(1.05);
+}
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0.9; 
+}
+#play-btn {
+    width: 80px;
+    height: 80px;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    background: linear-gradient(145deg, #21a7fc, #b8cad6);
+}
+.track {
+    width: 250px;
+    text-align: center;
+}
+.track > * {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+b {
+    display: block;
+    color: #007acc;
+    font-size: 24px;
+}
+i {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+    font-style: italic;
+}
+input {
+    width: 120px;
+    height: 5px;
+    margin-top: 15px;
+    outline: none;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+input::-webkit-slider-runnable-track {
+    height: 4px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #80d0ff, #4aa1f3);
+}
+input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 4px;
+    width: 10px;
+    border-radius: 8px;
+    background-color: #555;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+span {
+    width: 40px;
+    font-size: 14px;
+    text-align: right;
+}
+#next-btn {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #248fd6;
+    background: url(img/next.svg) 50%/90% no-repeat;
+}
