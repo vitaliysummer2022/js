@@ -7,7 +7,7 @@ let attempts = 3;
 
 createCards();
 document.querySelector('ul').addEventListener('click', e => {
-    if (!e.target.classList.contains('hidden')) {
+    if (!e.target.classList.contains('hidden') || document.querySelectorAll('.opened').length === 2) {
         return;
     }
     if (document.querySelectorAll('.opened').length < 2) {
